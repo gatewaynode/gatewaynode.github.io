@@ -3,6 +3,8 @@
   <head>
     <title>
     
+        Sign In
+    
 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -41,20 +43,31 @@
     </nav>
 
     
-  <div class="front-page articles-list">
-      <div class="title">Recent Articles</div>
-      
-        <div class="article-title">
-          <a href=/view/article/4>And now I have a CMS</a>
-        </div>
-        <div class="article-created-date">
-          2019-12-26 19:07:32.312254
-        </div>
-        <div class="article-body">
-          <p>So after searching quite a bit in the Python ecosystem for a CMS for a project I was working on I got frustrated enough to build my own. &nbsp;The result is Ochyro, a web CMS designed around building headless content and/or static pages. &nbsp;I may have over engineered it a quite a bit for basic blogging and such, but this CMS is mine. &nbsp;I've constructed it with all I learned in over a decade of CMS web application development and hopefully it's useful to more people than just myself.</p>
-        </div>
-      
-  </div>
+	<div class="login-block">
+		<div class="title">Sign In</div>
+		<form action="" method="post" class="login-form" novalidate>
+			<input id="csrf_token" name="csrf_token" type="hidden" value="ImNlNmM0NGFkZWM2MTk2YWNhNWI4Y2FkNmNmZjIxNGJiMzA4NzJkMTQi.XgUO3Q.wZ7VjeBFzPdMI9bVpk7Mq-5tVAg">
+			<div class="username-fields">
+				<label for="username">Username</label>
+				<input id="username" name="username" required size="32" type="text" value="">
+			</div>
+			<div class="password-fields">
+				<label for="password">Password</label>
+				<input id="password" name="password" required size="32" type="password" value="">
+			</div>
+			<div class="remember-me-fields">
+                <input id="remember_me" name="remember_me" type="checkbox" value="y"> <label for="remember_me">Remember Me</label>
+            </div>
+			<div class="submit-button">
+                <input id="submit" name="submit" type="submit" value="Sign In">
+            </div>
+			
+			<div class="register-option">
+                New User? <a class="register-link" href=/edit/user>Click to Register</a>
+            </div>
+			
+		</form>
+	</div>
 
 
     
