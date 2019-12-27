@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>
+    
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+      href="/static/css/base.css">
+<link rel="stylesheet"
+      href="/static/css/terminal.css">
+
+    <link href="https://unpkg.com/tabulator-tables@4.5.2/dist/css/tabulator.min.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.5.2/dist/js/tabulator.min.js"></script>
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default">
+      <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index">Gatewaynode</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/view/articles-list">Articles</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="/login">Login</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+  <div class="title">All Articles</div>
+  <table id="content-control-table"></table>
+  <script>
+    var some_content = [{"title": "<a href=\"/view/article/4\">And now I have a CMS</a>", "date": "2019-12-26 19:07:32.312254"}];
+
+    var table = new Tabulator("#content-control-table", {
+   	height: "80%", // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+   	data:some_content, // Not sure why this doesn't work
+   	layout:"fitColumns",
+   	columns:[
+  	 	{title:"Title", field:"title", formatter: "html"},
+      {title:"Date", field:"date"},
+   	],
+  });
+  table._setData(some_content); // This works, setting in params doesn't
+  </script>
+
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
