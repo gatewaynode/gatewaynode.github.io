@@ -3,6 +3,8 @@
   <head>
     <title>
     
+        And now I have a CMS
+    
 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -41,19 +43,11 @@
     </nav>
 
     
-  <div class="front-page articles-list">
-      <div class="title">Recent Articles</div>
-      
-        <div class="article-title">
-          <a href=/view/article/4>And now I have a CMS</a>
-        </div>
-        <div class="article-created-date">
-          2019-12-26 19:07:32.312254
-        </div>
-        <div class="article-body">
-          <p>So after searching quite a bit in the Python ecosystem for a CMS for a project I was working on I got frustrated enough to build my own. &nbsp;The result is Ochyro, a web CMS designed around building headless content and/or static pages. &nbsp;I may have over engineered it a quite a bit for basic blogging and such, but this CMS is mine. &nbsp;I've constructed it with all I learned in over a decade of CMS web application development and hopefully it's useful to more people than just myself.</p>
-        </div>
-      
+  <div class="title content-title node-id-4">
+    And now I have a CMS
+  </div>
+  <div class="body content-body">
+    <p>So after searching quite a bit in the Python ecosystem for a CMS for a project I was working on I got frustrated enough to build my own. &nbsp;The result is Ochyro, a web CMS designed around building headless content and/or static pages. &nbsp;I may have over engineered it a quite a bit for basic blogging and such, but this CMS is mine. &nbsp;I've constructed it with all I learned in over a decade of CMS web application development and hopefully it's useful to more people than just myself.</p>
   </div>
 
 
