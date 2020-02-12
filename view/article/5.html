@@ -3,14 +3,15 @@
 <html>
 <head>
 <title>
+    
+        &lt;p&gt;And now I have a CMS&lt;/p&gt;
+    
 </title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <!-- Bootstrap -->
 <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/static/css/base.css" rel="stylesheet"/>
 <link href="/static/css/terminal.css" rel="stylesheet"/>
-<link href="https://unpkg.com/tabulator-tables@4.5.2/dist/css/tabulator.min.css" rel="stylesheet"/>
-<script src="https://unpkg.com/tabulator-tables@4.5.2/dist/js/tabulator.min.js" type="text/javascript"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -34,22 +35,19 @@
 </div>
 </div>
 </nav>
-<div class="title">All Articles</div>
-<table id="content-control-table"></table>
-<script>
-    var some_content = [{"title": "<a href=\"/view/article/5.html\"><p>And now I have a CMS</p></a>", "date": "2020-02-12 20:39:47.700906"}, {"title": "<a href=\"/view/article/7.html\"><p>How I found the PinePhone and why this is awesome.</p></a>", "date": "2020-02-12 21:56:09.149272"}];
-
-    var table = new Tabulator("#content-control-table", {
-   	height: "80%", // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
-   	data:some_content, // Not sure why this doesn't work
-   	layout:"fitColumns",
-   	columns:[
-  	 	{title:"Title", field:"title", formatter: "html"},
-      {title:"Date", field:"date"},
-   	],
-  });
-  table._setData(some_content); // This works, setting in params doesn't
-  </script>
+<div class="container">
+<div class="article">
+<div class="title content-title node-id-5">
+<p>And now I have a CMS</p>
+</div>
+<div class="article-created-date">
+        2020-02-12 20:39:47.700906
+      </div>
+<div class="body content-body">
+<p>So after searching quite a bit in the Python ecosystem for a CMS for a project I was working on I got frustrated enough to build my own.  The result is Ochyro, a web CMS designed around building headless content and/or static pages.  I may have over engineered it a quite a bit for basic blogging and such, but this CMS is mine.  I've constructed it with all I learned in over a decade of CMS web application development and hopefully it's useful to more people than just myself.</p>
+</div>
+</div>
+</div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

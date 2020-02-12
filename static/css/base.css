@@ -69,6 +69,10 @@ body .navbar-default .navbar-toggle .icon-bar{
   margin-bottom: 10px;
 }
 
+.article .article-created-date{
+  padding-left: 10px;
+}
+
 /*   left-margin: 100px; */
 .login-form{
   padding: 10px;
@@ -89,6 +93,10 @@ body .navbar-default .navbar-toggle .icon-bar{
 
 /* General Form Styles */
 
+form .form-control{
+  width: 80%;
+}
+
 input{
   background-color: #2F2F2F;
 }
@@ -100,6 +108,9 @@ form input{
   caret-color: #50D214;
   color: #5FDF2F;
   font-weight: bold;
+}
+.form-group p{
+  background-color: rgba(0, 0, 0, 0.7);
 }
 form input#submit{
   color: #F0F0F0;
@@ -229,4 +240,12 @@ body .ck.ck-toolbar .ck.ck-toolbar__separator {
 body .ck .ck-editor__main .ck-editor__editable_inline {
   background-color: #000000;
   border-color: #1A1A1A;
+}
+
+table.site-content th{
+  background-color: #2F2F2F;
+}
+
+body table tbody td:first-child {
+	font-weight: normal;
 }
